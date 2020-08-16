@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="favicon iewport" content="width=device-width, initial-scale=1.0">
+  <!--可以让部分国产浏览器默认采用高速模式渲染页面-->
+  <meta name="renderer" content="webkit">
+  <!--为了让 IE 浏览器运行最新的渲染模式下-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>别踩小白块</title>
+  <meta name="keywords" content="别踩小白块，游戏，益智，手速，音乐">
+  <meta name="description" content="别踩小白块是一款休闲益智音乐类游戏，以简单的点击操作为基础，采用清新淡雅的钢琴效果，背景是带着气泡的梦幻感觉。">
+  <!--网页快捷图标-->
+  <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+
+
+  <script>
+    let scale = 1.0 / window.devicePixelRatio;
+    let text =
+      `<meta name="viewport" content="width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no">`;
+    document.write(text);
+    document.documentElement.style.fontSize = window.innerWidth / 7.5 + "px";
+  </script>
+</body>
+
+</html>
