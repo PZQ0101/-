@@ -1,0 +1,103 @@
+// 首页
+.home {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  .header {
+    margin: 50px;
+    .score {
+      font-size: 80px;
+    }
+  }
+  .bottom {
+    .start {
+      font-size: 60px;
+      width: 400px;
+      height: 200px;
+      position: absolute;
+      bottom: 200px;
+      left: 50%;
+      transform: translate(-50%);
+      border-radius: 50px;
+      outline: none;
+      background-color: #ccc;
+      opacity: 0.8;
+    }
+  }
+}
+
+// 游戏页面
+.game {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: pink;
+  .grid {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid black;
+    .row {
+      display: flex;
+      width: 100%;
+      height: 400px;
+      .col {
+        width: 25%;
+        height: 100%;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        &:last-child {
+          border-right: none;
+        }
+        &.active {
+          background-color: black;
+        }
+      }
+    }
+  }
+  .fail {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .fail-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      // background-color: red;
+      .top {
+        width: 500px;
+        height: 200px;
+        font-size: 60px;
+        background-color: rgb(0, 255, 106);
+        border-radius: 50px;
+        text-align: center;
+        line-height: 200px;
+      }
+      .bottom {
+        margin-top: 20px;
+        .back, .go {
+          width: 200px;
+          height: 150px;
+          background-color: salmon;
+          font-size: 50px;
+          text-align: center;
+          line-height: 150px;
+          outline: none;
+          border-radius: 30px;
+        }
+        .back {
+          margin-right: 70px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.home {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+
+.home .header {
+  margin: 50px;
+}
+
+.home .header .score {
+  font-size: 80px;
+}
+
+.home .bottom .start {
+  font-size: 60px;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50px;
+  outline: none;
+  background-color: #ccc;
+  opacity: 0.8;
+}
+
+.game {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: pink;
+}
+
+.game .grid {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.game .grid .row {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.game .grid .row .col {
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.game .grid .row .col:last-child {
+  border-right: none;
+}
+
+.game .grid .row .col.active {
+  background-color: black;
+}
+
+.game .fail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.game .fail .fail-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game .fail .fail-content .top {
+  width: 500px;
+  height: 200px;
+  font-size: 60px;
+  background-color: #00ff6a;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.game .fail .fail-content .bottom {
+  margin-top: 20px;
+}
+
+.game .fail .fail-content .bottom .back, .game .fail .fail-content .bottom .go {
+  width: 200px;
+  height: 150px;
+  background-color: salmon;
+  font-size: 50px;
+  text-align: center;
+  line-height: 150px;
+  outline: none;
+  border-radius: 30px;
+}
+
+.game .fail .fail-content .bottom .back {
+  margin-right: 70px;
+}

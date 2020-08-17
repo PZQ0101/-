@@ -13,17 +13,69 @@
   <meta name="description" content="别踩小白块是一款休闲益智音乐类游戏，以简单的点击操作为基础，采用清新淡雅的钢琴效果，背景是带着气泡的梦幻感觉。">
   <!--网页快捷图标-->
   <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+  <!-- 首页 -->
+  <div class="home">
+    <!-- 头部 -->
+    <div class="header">
+      <div class="score">
+        最高得分：
+        <span>0</span>
+      </div>
+    </div>
+    <div class="bottom">
+      <button class="start">开始游戏</button>
+    </div>
+  </div>
+
+  <!-- 游戏页面 -->
+  <div class="game" style="display: none;">
+    <div class="grid">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <!-- 输了弹框 -->
+    <div class="fail" style="display: none;">
+      <div class="fail-content">
+        <div class="top">
+          输了，兄dei！
+        </div>
+        <div class="bottom">
+          <button class="back">返回</button>
+          <button class="go">再来</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <script src="js/jquery-1.10.1.min.js"></script>
+  <script src="js/index.js"></script>
   <script>
     let scale = 1.0 / window.devicePixelRatio;
     let text =
       `<meta name="viewport" content="width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no">`;
     document.write(text);
-    document.documentElement.style.fontSize = window.innerWidth / 7.5 + "px";
   </script>
 </body>
 
